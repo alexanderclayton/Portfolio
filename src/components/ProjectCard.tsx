@@ -13,7 +13,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({image, name, id}) => {
   return (
     // <div onClick={() => navigate(`/project/${id}`)}>
     <div className="project-card">
-        <div style={{ backgroundImage: `url(${image})` }} className="bg-cover bg-no-repeat bg-center w-[300px] h-[200px] rounded-t-2xl"/>
+        <div style={{ backgroundImage: `url(${image})` }} className="bg-cover bg-no-repeat bg-center w-[300px] h-[200px] rounded-t-2xl "/>
         <h2>{name}</h2>
     </div>
   )
