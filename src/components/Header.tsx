@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
   };
   return (
     <header className="flex justify-between h-[60px]">
-      <h1>Alex Clayton</h1>
+      <h1 className="text-4xl">A<span className="font-bold">C</span></h1>
       <div>
         <div className="hidden sm:block">
           <ul className="flex">
