@@ -4,7 +4,9 @@ export default {
   theme: {
     fontFamily: {
       Quicksand: ['Quicksand', 'sans-serif'],
-      Kalam: ['Kalam', 'cursive']
+      Kalam: ['Kalam', 'cursive'],
+      SIL: ['Shadows Into Light', 'cursive']
+
     },
     fontSize: {
       "xs": "0.75rem",
@@ -31,6 +33,9 @@ export default {
 
         "light-blue": "#e5eeff",
       },
+      gridTemplateColumns: {
+      '14': 'repeat(14, minmax(0, 1fr))'
+      }
     },
   },
   plugins: [],
