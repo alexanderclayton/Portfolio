@@ -9,32 +9,32 @@ export const Header: React.FC = () => {
     setNav(!nav);
   };
   return (
-    <header className="flex justify-between h-[60px]">
-      <h1 className="text-4xl">A<span className="font-bold">C</span></h1>
-      <div>
-        <div className="hidden sm:block">
-          <ul className="flex">
-            <li className="px-4">
+    <header className={!nav ? "flex justify-between h-[60px] font-Quicksand" : "bg-primary-blue flex justify-between font-Quicksand"}>
+      <h1 className={!nav ? "pl-4 text-4xl bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text" : "pl-4 text-4xl bg-gradient-to-r from-secondary-blue to-secondary-purple text-transparent bg-clip-text"}>Alex Clayton</h1>
+      <div className="sm:w-[40%]">
+        <div className="hidden sm:flex pt-3">
+          <ul className="flex w-full justify-around">
+            <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
               <a href="#about">About</a>
             </li>
-            <li className="px-4">
+            <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
               <a href="#projects">Projects</a>
             </li>
-            <li className="px-4">
+            <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
               <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
         {!nav ? (
           <AiOutlineMenu
-            size={40}
-            className="hover:cursor-pointer z-10 sm:hidden mr-4"
+            size={50}
+            className="hover:cursor-pointer z-10 sm:hidden mr-4 pt-2"
             onClick={handleNav}
           />
         ) : (
           <AiOutlineClose
-            size={40}
-            className="hover:cursor-pointer z-10 sm:hidden mr-4"
+            size={50}
+            className="hover:cursor-pointer z-10 sm:hidden mr-4 pt-2"
             onClick={handleNav}
           />
         )}
@@ -42,18 +42,18 @@ export const Header: React.FC = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-24 w-full max-h-[800px] h-full bg-primary-blue translate-x-0 transition duration-500 ease-in-out"
+            ? "fixed left-0 top-12 w-full max-h-[800px] h-[full] bg-primary-blue translate-x-0 transition duration-500 ease-in-out"
             : "fixed left-[-100%] translate-x-[-100%]"
         }
       >
-        <div className="w-full h-full flex flex-col items-center">
-          <a onClick={handleNav} className="text-4xl px-3 my-24" href="#about">
+        <div className="w-full h-full flex flex-col items-center pb-32">
+          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="#about">
             About Me
           </a>
-          <a onClick={handleNav} className="text-4xl px-3 my-24" href="">
+          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="">
             Projects
           </a>
-          <a onClick={handleNav} className="text-4xl px-3 my-24" href="">
+          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="">
             Contact
           </a>
         </div>

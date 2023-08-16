@@ -4,7 +4,7 @@ import Image from "../assets/fotor-ai-2023081675851.jpg";
 export const Hero: React.FC = () => {
   return (
     <section className="w-full h-screen flex justify-center items-center font-Quicksand">
-      <div className="sm:w-[60%] w-full flex flex-col items-center">
+      <div className="sm:w-[60%] xl:w-[60%] w-full flex flex-col items-center">
         <div className="flex flex-col items-center sm:items-end">
           <p className="text-4xl md:text-5xl lg:text-6xl">Hi, my name is</p>
           <p className="font-Kalam text-8xl lg:text-10xl font-bold bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text md:text-9xl">
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
           />
         </div>
       </div>
-      <div className="w-[50%] xl:w-[60%] hidden sm:block">
+      <div className="w-[50%] sm:block">
         <span className="faded">
           <img src={Image} alt="placeholder" className="max-h-[850px]" />
         </span>
