@@ -15,10 +15,10 @@ export const Header: React.FC = () => {
         <div className="hidden sm:flex pt-3">
           <ul className="flex w-full justify-around">
             <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
-              <a href="#about">About</a>
+              <a href="/#about">About</a>
             </li>
             <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
-              <a href="#projects">Projects</a>
+              <a href="/#projects">Projects</a>
             </li>
             <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
               <a href="#contact">Contact</a>
