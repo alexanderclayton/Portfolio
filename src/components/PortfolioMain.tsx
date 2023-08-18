@@ -1,25 +1,38 @@
-//import//
+import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectCards } from "../data/ProjectData";
+import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
 
 export const PortfolioMain: React.FC = () => {
   return (
-    <section className="flex justify-center font-Quicksand pt-16">
-      <div className="w-[90%] flex sm:flex-row flex-col items-center relative">
-        <div className="sm:absolute sm:left-0 sm:top-1/2 text-3xl sm:-rotate-90">
-          <h1>Portfolio</h1>
+    <section className="xl:px-12 flex flex-col md:flex-row px-4 items-center">
+      <div className="md:relative md:w-[10%]">
+        <h1 className="md:absolute md:text-rotate text-3xl font-bold font-Quicksand">
+          Portfolio
+        </h1>
+      </div>
+      <div className="md:w-[90%] w-full flex">
+        <div className="md:w-[5%] w-[10%] flex items-center justify-center">
+          <BiSolidLeftArrow
+            size={60}
+            className="p-2 pr-3 bg-light-blue text-light-primary hover:text-dark-secondary hover:cursor-pointer rounded-full"
+          />
         </div>
-        <div className="sm:overflow-x-scroll scroll w-full sm:ml-36 flex justify-center">
-          <div className="flex flex-col sm:flex-row sm:whitespace-nowrap">
-            {ProjectCards.map((project, idx) => (
-              <ProjectCard
-                key={idx}
-                id={idx}
-                name={project.name}
-                image={project.image}
-              />
-            ))}
-          </div>
+        <div className="flex md:flex-row w-[80%] md:w-[90%] overflow-x-scroll whitespace-nowrap items-center">
+          {ProjectCards.map((project, idx) => (
+            <ProjectCard
+              key={idx}
+              id={idx}
+              name={project.name}
+              image={project.image}
+            />
+          ))}
+        </div>
+        <div className="md:w-[5%] w-[10%] flex items-center justify-center">
+          <BiSolidRightArrow
+            size={60}
+            className="p-2 pl-3 bg-light-blue text-light-primary hover:text-dark-secondary hover:cursor-pointer rounded-full"
+          />
         </div>
       </div>
     </section>

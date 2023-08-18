@@ -29,8 +29,13 @@
     text-align: center;
   }
   .project-card:hover {
-    box-shadow: 0px 3px 15px rgb(238, 101, 101);
+    box-shadow: 0px 3px 15px #690f9a;
     transition: 0.3s ease-in;
     cursor: pointer;
+  }
+  .text-rotate {
+    top: 50%;
+
+    transform: translateY(-50%) rotate(-90deg);
   }
 }
