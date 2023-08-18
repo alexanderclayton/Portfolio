@@ -47,13 +47,13 @@ export const Header: React.FC = () => {
         }
       >
         <div className="w-full h-full flex flex-col items-center pb-32">
-          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="#about">
+          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="/#about">
             About Me
           </a>
-          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="">
+          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="/#projects">
             Projects
           </a>
-          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="">
+          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="/#contact">
             Contact
           </a>
         </div>
