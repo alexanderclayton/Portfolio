@@ -4,7 +4,7 @@ import Axios from "../assets/axios3626.jpg";
 
 export const About: React.FC = () => {
   return (
-    <section className="flex flex-col items-center font-Quicksand px-4 xl:px-12">
+    <section id="about" className="flex flex-col items-center font-Quicksand px-4 xl:px-12">
       <div className="flex flex-col sm:flex-row w-full">
         <div className="flex justify-center mr-6">
           <img src={Headshot} alt="headshot" className="max-h-[250px] sm:max-h-[350px]"/>

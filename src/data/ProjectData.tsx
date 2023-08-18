@@ -6,6 +6,7 @@ import Image4 from '../assets/placeholder-image-4.jpg';
 import Image5 from '../assets/collage-cat.jpg';
 
 interface IProjectCards {
+    id: number
     name: string
     image: string
     skills: string
@@ -18,6 +19,7 @@ interface IProjectCards {
 
 export const ProjectCards: IProjectCards[] = [
     {
+        id: 0,
         name: "Group Project #1: NPS Trip Planner",
         image: Image1,
         skills: "HTML, CSS, JavaScript",
@@ -27,6 +29,7 @@ export const ProjectCards: IProjectCards[] = [
         github: "https://github.com/CECurtiss/parks-and-weather-app"
     },
     {
+        id: 1,
         name: "Kanye.rest",
         image: Image2,
         skills: "HTML, CSS, JavaScript",
@@ -36,6 +39,7 @@ export const ProjectCards: IProjectCards[] = [
         github: "https://github.com/alexclaytonbootcamp/kanye.rest"
     },
     {
+        id: 2,
         name: "Hello from the World",
         image: Image3,
         skills: "HTML, CSS, JavaScript",
@@ -45,6 +49,7 @@ export const ProjectCards: IProjectCards[] = [
         github: "https://github.com/alexclaytonbootcamp/Hello-From-the-World"
     },
     {
+        id: 3,
         name: "TV Show Message Board",
         image: Image4,
         skills: "HTML, CSS, JavaScript, Node.js",
@@ -54,6 +59,7 @@ export const ProjectCards: IProjectCards[] = [
         github: "https://github.com/alexclaytonbootcamp/GitLit-Group-5"
     },
     {
+        id: 4,
         name: "Collagio",
         image: Image5,
         skills: "MongoDB, Express, React, Node",

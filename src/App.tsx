@@ -1,22 +1,19 @@
 //import//
-import { About } from "./components/About"
-import { Header } from "./components/Header"
-import { Hero } from "./components/Hero"
-import { PortfolioMain } from "./components/PortfolioMain"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+import { Home } from "./pages/Home";
+import { Project } from "./pages/Project";
 
 function App() {
-
-
   return (
-    <>
-    <Header />
-    <main>
-      <Hero />
-      <About />
-      <PortfolioMain />
-    </main>
-    </>
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<Project />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
