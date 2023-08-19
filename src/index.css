@@ -4,10 +4,13 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    background-color: #E1ECF4;
+  }
   .faded {
     position: relative;
     display: inline-block;
-    color: white;
+    color: #E1ECF4;
   }
   .faded:after {
     content: "";
@@ -25,11 +28,11 @@
     width: 300px;
     height: 300px;
     margin: 40px;
-    box-shadow: 0px 3px 15px white;
+    box-shadow: 0px 3px 15px #E1ECF4;
     text-align: center;
   }
   .project-card:hover {
-    box-shadow: 0px 3px 15px #690f9a;
+    box-shadow: 0px 3px 15px #B854EE;
     transition: 0.3s ease-in;
     cursor: pointer;
   }

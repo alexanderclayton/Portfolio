@@ -37,12 +37,13 @@ export default {
         "light-primary": "#8fb3ff",
         "light-secondary": "#fafcff",
         "light-accent": "#690f9a",
+        "light-background": "#E1ECF4",
 
         "dark-text": "#ffffff",
         "dark-background": "#000000",
         "dark-primary": "#8fb3ff",
         "dark-secondary": "#002761",
-        "dark-accent": "#b854ee",
+        "dark-accent": "#B854EE",
       },
       gridTemplateColumns: {
         14: "repeat(14, minmax(0, 1fr))",

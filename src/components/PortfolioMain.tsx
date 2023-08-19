@@ -24,7 +24,7 @@ export const PortfolioMain: React.FC = () => {
   return (
     <section id="projects" className="xl:px-12 flex flex-col md:flex-row px-4 items-center py-12">
       <div className="md:relative md:w-[10%]">
-        <h1 className="md:absolute md:text-rotate md:text-3xl font-bold font-Kalam text-4xl">
+        <h1 className="md:absolute md:text-rotate md:text-4xl font-bold font-Kalam text-4xl">
           Portfolio
         </h1>
       </div>
@@ -33,7 +33,7 @@ export const PortfolioMain: React.FC = () => {
           <BiSolidLeftArrow
             size={60}
             onClick={slideLeft}
-            className="p-2 pr-3 bg-light-blue text-light-primary hover:text-dark-secondary hover:cursor-pointer rounded-full"
+            className="p-2 pr-3 bg-light-primary/30 text-dark-secondary hover:text-light-background hover:bg-light-primary hover:cursor-pointer rounded-full"
           />
         </div>
         <div
@@ -53,7 +53,7 @@ export const PortfolioMain: React.FC = () => {
           <BiSolidRightArrow
             size={60}
             onClick={slideRight}
-            className="p-2 pl-3 bg-light-blue text-light-primary hover:text-dark-secondary hover:cursor-pointer rounded-full"
+            className="p-2 pl-3 bg-light-primary/30 text-dark-secondary hover:text-light-background hover:bg-light-primary hover:cursor-pointer rounded-full"
           />
         </div>
       </div>
