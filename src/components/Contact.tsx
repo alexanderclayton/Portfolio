@@ -5,19 +5,19 @@ import { AiOutlineMail } from "react-icons/ai";
 
 export const Contact: React.FC = () => {
   return (
-    <section className="p-12 flex w-full">
-      <div className="w-[50%]">
+    <section className="p-12 flex flex-col md:flex-row w-full">
+      <div className="md:w-[50%] w-full">
         <h1 className="font-Kalam text-3xl">Get a Quote</h1>
         <form action="submit" className="flex flex-col items-start">
-          <div className="flex justify-between w-full">
-            <input type="text" placeholder="Name" className="w-[45%] border" />
-            <input type="text" placeholder="Email" className="w-[45%] border" />
+          <div className="flex flex-col md:flex-row justify-between w-full">
+            <input type="text" placeholder="Name" className="md:w-[45%] border mb-4 md:mb-0" />
+            <input type="text" placeholder="Email" className="md:w-[45%] border" />
           </div>
           <textarea name="Message" placeholder="Message" cols={30} rows={10} className="w-full h-44 border my-4" ></textarea>
           <button className="bg-primary-blue px-6 py-3 rounded-lg">Send Message</button>
         </form>
       </div>
-      <div className="w-[50%] flex flex-col items-center">
+      <div className="md:w-[50%] w-full flex flex-col items-center pl-4 pt-12 md:pt-0">
         <h1 className="font-Kalam text-3xl">Contact Me</h1>
           <div className="w-full flex">
             <div className="w-[30%] flex flex-col justify-around items-end">
