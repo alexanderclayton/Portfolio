@@ -15,18 +15,24 @@ export const Hero: React.FC = () => {
           </p>
         </div>
         <div className="grid grid-cols-3 w-[40%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[20%] 2xl:w-[15%] pt-6">
-          <img
-            className="px-2"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
-          />
-          <img
-            className="px-2"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-          />
-          <img
-            className="px-2"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-          />
+          <a href="https://twitter.com/webdevalexc">
+            <img
+              className="px-2"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/alexander-clayton-64766090/">
+            <img
+              className="px-2"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+            />
+          </a>
+          <a href="https://github.com/alexanderclayton">
+            <img
+              className="px-2"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            />
+          </a>
         </div>
       </div>
       <div className="w-[50%] sm:block hidden">
