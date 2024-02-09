@@ -2,7 +2,7 @@ import Image1 from "../assets/group-project-1.jpg";
 import Image2 from "../assets/kanye-rest-image.jpg";
 import Image3 from "../assets/languages-signpost.jpg";
 import Image4 from "../assets/abc35be4-2941-42d8-8f8d-f738ecd6e574.__CR0,0,300,300_PT0_SX300_V1___.jpg";
-import Image5 from "../assets/THGExteriorsThumbnail.png";
+import Image5 from "../assets/THGExteriorsThumbnail.PNG";
 
 interface IProjectCards {
   id: number;
