@@ -1,8 +1,8 @@
 import Image1 from "../assets/group-project-1.jpg";
 import Image2 from "../assets/kanye-rest-image.jpg";
 import Image3 from "../assets/languages-signpost.jpg";
-import Image4 from "../assets/placeholder-image-4.jpg";
-import Image5 from "../assets/collage-cat.jpg";
+import Image4 from "../assets/abc35be4-2941-42d8-8f8d-f738ecd6e574.__CR0,0,300,300_PT0_SX300_V1___.jpg";
+import Image5 from "../assets/THGExteriorsThumbnail.png";
 
 interface IProjectCards {
   id: number;
@@ -67,36 +67,36 @@ export const ProjectCards: IProjectCards[] = [
   },
   {
     id: 3,
-    name: "TV Show Message Board",
+    name: "Mythical Creatures Art Prompts",
     image: Image4,
     skills: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
-    ],
-    skillsAlt: ["HTML", "CSS", "JavaScript", "Node.JS"],
-    link: "https://gitlit-group-5.herokuapp.com/",
-    alt: "Mysterious underwater scene",
-    description:
-      "This was our second group project in the KU Coding Bootcamp.  In its inception, we were maybe a bit too ambitious, but as we learn and build our skills, this should be a fun project to complete some day :)",
-    github: "https://github.com/alexclaytonbootcamp/GitLit-Group-5",
-  },
-  {
-    id: 4,
-    name: "Collagio",
-    image: Image5,
-    skills: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
     ],
-    skillsAlt: ["MongoDB", "Express", "React", "Node.JS"],
-    link: "https://collagio.herokuapp.com/",
-    alt: "Incredibly cute kitty made out of photos to look like a collage",
+    skillsAlt: ["Firebase", "TypeScript", "React", "Node.JS"],
+    link: "https://card-draw.vercel.app/",
+    alt: "Mythical Creatures Logo",
     description:
-      "This was our 3rd group project in the KU coding bootcamp.  We created a collage-maker MERN application, using the react-draggable and react-resizable packages to drag photos around and print the finished product.",
-    github: "https://github.com/alexanderclayton/TeamAwesome",
+      "This is a digital version of Taylan's favorite card game.  A simple art prompt game where the user draws 5 topic cards, and attempts to draw an animal that incorporates all 5 topics.  This was a fun holiday sideproject, and provided a great solution to our deck shuffling problem. All rights to the original product belong to Drawing Deck, LLC.",
+    github: "https://github.com/alexanderclayton/CardDraw",
+  },
+  {
+    id: 4,
+    name: "THGExteriors",
+    image: Image5,
+    skills: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+    ],
+    skillsAlt: ["Firebase", "TypeScript", "React", "Node.JS"],
+    link: "https://thg-exteriors.vercel.app/",
+    alt: "Thumbnail of the THGExteriors CRM",
+    description:
+      "Slightly different take on a 'full-stack' React application.  This is a CRM I built for a friends business using React for the frontend and Firebase BaaS for the backend.  This was an exciting project to start 2024 and acted as a great opportunity to learn and build several skills.",
+    github: "https://github.com/alexanderclayton/THGExteriors",
   },
 ];
