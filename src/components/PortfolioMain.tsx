@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import { ProjectCards } from "../data/ProjectData";
 import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
 
-export const PortfolioMain: React.FC = () => {
+export const PortfolioMain = () => {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     if (slider && window.innerWidth < 640) {
@@ -22,7 +22,10 @@ export const PortfolioMain: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="xl:px-12 flex flex-col md:flex-row px-4 items-center py-12">
+    <section
+      id="projects"
+      className="xl:px-12 flex flex-col md:flex-row px-4 items-center py-12 pt-24"
+    >
       <div className="md:relative md:w-[10%]">
         <h1 className="md:absolute md:text-rotate md:text-4xl font-bold font-Kalam text-4xl">
           Portfolio
@@ -40,9 +43,9 @@ export const PortfolioMain: React.FC = () => {
           id="slider"
           className="flex md:flex-row w-[80%] md:w-[90%] overflow-x-hidden whitespace-nowrap items-center scroll-smooth"
         >
-          {ProjectCards.map((project) => (
+          {ProjectCards.map((project, idx) => (
             <ProjectCard
-              key={project.id}
+              key={idx}
               id={project.id}
               name={project.name}
               image={project.image}

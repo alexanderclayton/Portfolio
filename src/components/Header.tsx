@@ -1,16 +1,24 @@
-//import//
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-export const Header: React.FC = () => {
+export const Header = () => {
   const [nav, setNav] = useState<boolean>(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
-    <header className={!nav ? "flex justify-between h-[60px] font-Quicksand" : "bg-primary-blue flex justify-between font-Quicksand"}>
-      <h1 className={!nav ? "font-bold font-SIL pl-4 text-4xl bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text" : "pl-4 text-4xl bg-gradient-to-r from-secondary-blue to-secondary-purple text-transparent bg-clip-text font-SIL font-bold"}>Alex Clayton</h1>
+    <header
+      className={
+        !nav
+          ? "flex justify-between h-[60px] sm:static font-Quicksand fixed w-full bg-primary-blue sm:bg-transparent"
+          : "bg-primary-blue flex justify-between font-Quicksand fixed w-full"
+      }
+    >
+      <h1 className="pl-4 text-4xl bg-gradient-to-r from-secondary-blue to-secondary-purple text-transparent bg-clip-text font-SIL font-bold">
+        Alex Clayton
+      </h1>
       <div className="sm:w-[40%]">
         <div className="hidden sm:flex pt-3">
           <ul className="flex w-full justify-around">
@@ -21,7 +29,7 @@ export const Header: React.FC = () => {
               <a href="/#projects">Projects</a>
             </li>
             <li className="px-4 py-1 text-xl hover:bg-primary-blue/50 hover-text-white rounded-full hover:cursor-pointer">
-              <a href="#contact">Contact</a>
+              <a href="/#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -42,18 +50,30 @@ export const Header: React.FC = () => {
       <div
         className={
           nav
-            ? "z-10 fixed left-0 top-12 w-full max-h-[800px] h-[full] bg-primary-blue translate-x-0 transition duration-500 ease-in-out"
+            ? "z-10 fixed left-0 top-12 w-full max-h-[calc(100vh - 60px)] bg-primary-blue translate-x-0 transition duration-500 ease-in-out"
             : "z-10 fixed left-[-100%] translate-x-[-100%]"
         }
       >
         <div className="w-full h-full flex flex-col items-center pb-32">
-          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="/#about">
+          <a
+            onClick={handleNav}
+            className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white"
+            href="/#about"
+          >
             About Me
           </a>
-          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="/#projects">
+          <a
+            onClick={handleNav}
+            className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white"
+            href="/#projects"
+          >
             Projects
           </a>
-          <a onClick={handleNav} className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white" href="/#contact">
+          <a
+            onClick={handleNav}
+            className="text-4xl px-3 my-20 w-full text-center hover:bg-gradient-to-r from-primary-blue via-primary-purple to-primary-blue hover:text-white"
+            href="/#contact"
+          >
             Contact
           </a>
         </div>

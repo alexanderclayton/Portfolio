@@ -5,8 +5,8 @@ import { VscSymbolNamespace } from "react-icons/vsc";
 import { BsGlobeAmericas, BsPhone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
-export const Contact: React.FC = () => {
-  const form = useRef(null);
+export const Contact = () => {
+  const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.MouseEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,7 +33,10 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section className="p-12 flex flex-col md:flex-row w-full">
+    <section
+      id="contact"
+      className="p-12 flex flex-col md:flex-row w-full pt-24"
+    >
       <div className="md:w-[50%] w-full">
         <h1 className="font-Kalam text-3xl">Get a Quote</h1>
         <form
@@ -47,13 +50,13 @@ export const Contact: React.FC = () => {
               type="text"
               placeholder="Name"
               name="user_name"
-              className="md:w-[45%] border mb-4 md:mb-0"
+              className="md:w-[45%] border mb-4 md:mb-0 p-2 rounded focus:outline-none focus:ring-2 focus:ring-secondary-purple"
             />
             <input
               type="text"
               placeholder="Email"
               name="user_email"
-              className="md:w-[45%] border"
+              className="md:w-[45%] border p-2 rounded focus:outline-none focus:ring-2 focus:ring-secondary-purple"
             />
           </div>
           <textarea
@@ -61,12 +64,12 @@ export const Contact: React.FC = () => {
             placeholder="Message"
             cols={30}
             rows={10}
-            className="w-full h-44 border my-4"
+            className="w-full h-44 border p-2 my-4 rounded focus:outline-none focus:ring-2 focus:ring-secondary-purple"
           ></textarea>
           <input
             type="submit"
             value="Send Message"
-            className="bg-primary-blue px-6 py-3 rounded-lg hover:cursor-pointer"
+            className="bg-primary-blue text-light-text px-6 py-3 rounded-lg hover:bg-secondary-purple hover:cursor-pointer"
           />
         </form>
       </div>
