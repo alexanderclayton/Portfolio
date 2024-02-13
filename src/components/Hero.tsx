@@ -1,17 +1,17 @@
 //import//
 import Image from "../assets/fotor-ai-2023081675851.jpg";
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
-    <section className="w-full h-screen flex items-center font-Quicksand">
+    <section className="w-full h-screen flex items-center font-Quicksand sm:pt-[60px]">
       <div className="sm:w-[60%] xl:w-[60%] w-full flex flex-col items-center">
         <div className="flex flex-col items-center sm:items-end">
-          <p className="text-4xl md:text-5xl lg:text-6xl">Hi, my name is</p>
+          <p className="text-4xl md:text-5xl lg:text-6xl">Hi, I'm</p>
           <p className="font-Kalam text-8xl lg:text-10xl font-bold bg-gradient-to-r from-primary-blue to-primary-purple text-transparent bg-clip-text md:text-9xl">
             Alex
           </p>
           <p className="text-3xl lg:text-5xl md:text-4xl">
-            I build things for the web
+            I build things with code
           </p>
         </div>
         <div className="grid grid-cols-3 w-[40%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[20%] 2xl:w-[15%] pt-6">
