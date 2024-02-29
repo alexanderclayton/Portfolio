@@ -21,8 +21,20 @@ export const techStack: ITechStack[] = [
         alt: "TypeScript"
     },
     {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
+        alt: "Python"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
+        alt: "GraphQL"
+    },
+    {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
         alt: "React"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg",
+        alt: "Flask"
     },
     {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
@@ -33,18 +45,6 @@ export const techStack: ITechStack[] = [
         alt: "NodeJS"
     },
     {
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg",
-        alt: "Firebase"
-    },
-    {
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-        alt: "MongoDB"
-    },
-    {
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
-        alt: "MySQL"
-    },
-    {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
         alt: "ExpressJS"
     },
@@ -53,11 +53,39 @@ export const techStack: ITechStack[] = [
         alt: "Axios"
     },
     {
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
-        alt: "GraphQL"
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg",
+        alt: "Git"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg",
+        alt: "Firebase"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+        alt: "MongoDB"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg",
+        alt: "SQLAlchemy"
     },
     {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
         alt: "WordPress"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/filezilla/filezilla-original.svg",
+        alt: "FileZilla"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+        alt: "Vite"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+        alt: "Postman"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        alt: "Vercel"
     },
 ]
