@@ -38,7 +38,7 @@ export const Contact = () => {
       className="p-12 flex flex-col md:flex-row w-full pt-24"
     >
       <div className="md:w-[50%] w-full">
-        <h1 className="font-Kalam text-3xl">Get a Quote</h1>
+        <h1 className="font-Kalam text-3xl">Send Me a Message</h1>
         <form
           action="submit"
           ref={form}
