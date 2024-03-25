@@ -25,10 +25,6 @@ export const techStack: ITechStack[] = [
         alt: "Python"
     },
     {
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
-        alt: "GraphQL"
-    },
-    {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
         alt: "React"
     },
@@ -65,6 +61,10 @@ export const techStack: ITechStack[] = [
         alt: "MongoDB"
     },
     {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
+        alt: "GraphQL"
+    },
+    {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg",
         alt: "SQLAlchemy"
     },
@@ -85,7 +85,11 @@ export const techStack: ITechStack[] = [
         alt: "Postman"
     },
     {
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
         alt: "Vercel"
+    },
+    {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original-wordmark.svg",
+        alt: "DigitalOcean"
     },
 ]
