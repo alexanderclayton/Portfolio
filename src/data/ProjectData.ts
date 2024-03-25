@@ -3,6 +3,8 @@ import Image2 from "../assets/kanye-rest-image.jpg";
 import Image3 from "../assets/languages-signpost.jpg";
 import Image4 from "../assets/abc35be4-2941-42d8-8f8d-f738ecd6e574.__CR0,0,300,300_PT0_SX300_V1___.jpg";
 import Image5 from "../assets/THGExteriorsThumbnail.PNG";
+import Image6 from '../assets/ConnectionsCloneThumbnail.PNG'
+import Image7 from '../assets/TimeclockThumbnail.PNG'
 
 interface IProjectCards {
   id: number;
@@ -25,9 +27,8 @@ export const ProjectCards: IProjectCards[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
     ],
-    skillsAlt: ["Firebase", "TypeScript", "React", "Node.JS"],
+    skillsAlt: ["Firebase", "TypeScript", "React"],
     link: "https://thg-exteriors.vercel.app/",
     alt: "Thumbnail of the THGExteriors CRM",
     description:
@@ -36,6 +37,40 @@ export const ProjectCards: IProjectCards[] = [
   },
   {
     id: 1,
+    name: "Connections Clone",
+    image: Image6,
+    skills: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+    ],
+    skillsAlt: ["TypeScript", "React", "Python", "Flask", "MongoDB"],
+    link: "https://connections-clone-coral.vercel.app/",
+    alt: "Thumbnail of the Connections Clone home page",
+    description:
+      "Full-stack application using TypeScript and React for the frontend, a Python Flask api, and MongoDB for the database.  A friend reached out to me with a link to the NYT Connections game and asked 'can you make something like this?'  I thought, 'why not?!' and decided to use this as an opportunity to practice my Python skills on the backend. The frontend is a typical React application deployed to Vercel, while the backend is a Flask api deployed to a DigitalOcean droplet, with a cloud-hosted database on MongoDB Atlas.  This was a challenging project for me, specifically the api deployment on DigitalOcean, and I'm excited to share the finished product with the world!",
+    github: "https://github.com/alexanderclayton/ConnectionsClone",
+  },
+  {
+    id: 2,
+    name: "Timeclock",
+    image: Image7,
+    skills: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+    ],
+    skillsAlt: ["Firebase", "TypeScript", "React"],
+    link: "https://timeclock-pi.vercel.app/",
+    alt: "Thumbnail of the Timeclock vercel deployment",
+    description:
+      "This is a functional timeclock developed for a local non-profit to track volunteer shift hours.  It features a minimalist design, with a frontend built on React and the database running on Firebase SaaS.  User roles can be assigned to manage user access rights.  This was a great opportunity to build something practical with real-world application and contribute to the local community.",
+    github: "https://github.com/alexanderclayton/timeclock",
+  },
+  {
+    id: 3,
     name: "Mythical Creatures Art Prompts",
     image: Image4,
     skills: [
@@ -52,7 +87,7 @@ export const ProjectCards: IProjectCards[] = [
     github: "https://github.com/alexanderclayton/CardDraw",
   },
   {
-    id: 2,
+    id: 4,
     name: "Group Project #1: NPS Trip Planner",
     image: Image1,
     skills: [
@@ -68,7 +103,7 @@ export const ProjectCards: IProjectCards[] = [
     github: "https://github.com/CECurtiss/parks-and-weather-app",
   },
   {
-    id: 3,
+    id: 5,
     name: "Kanye.rest",
     image: Image2,
     skills: [
@@ -84,7 +119,7 @@ export const ProjectCards: IProjectCards[] = [
     github: "https://github.com/alexclaytonbootcamp/kanye.rest",
   },
   {
-    id: 4,
+    id: 6,
     name: "Hello from the World",
     image: Image3,
     skills: [
