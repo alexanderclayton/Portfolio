@@ -92,4 +92,12 @@ export const techStack: ITechStack[] = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original-wordmark.svg",
     alt: "DigitalOcean",
   },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
+    alt: "Windows",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    alt: "Linux",
+  },
 ];
