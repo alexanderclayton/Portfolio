@@ -4,13 +4,26 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    background-color: #E1ECF4;
+  :root {
+    --text: #0b1318;
+    --background: #f7fbfd;
+    --primary: #43a0d6;
+    --secondary: #81c6ef;
+    --accent: #55bbf7;
+    background-color: var(--background);
+  }
+  .dark {
+    --text: #e7eff4;
+    --background: #020608;
+    --primary: #2986bc;
+    --secondary: #10567e;
+    --accent: #086faa;
+    background-color: var(--background);
   }
   .faded {
     position: relative;
     display: inline-block;
-    color: #E1ECF4;
+    color: var(--background);
   }
   .faded:after {
     content: "";
@@ -28,11 +41,11 @@
     width: 300px;
     height: 300px;
     margin: 40px;
-    box-shadow: 0px 3px 15px #E1ECF4;
+    box-shadow: 0px 3px 15px #e1ecf4;
     text-align: center;
   }
   .project-card:hover {
-    box-shadow: 0px 3px 15px #B854EE;
+    box-shadow: 0px 3px 15px var(--accent);
     transition: 0.3s ease-in;
     cursor: pointer;
   }
