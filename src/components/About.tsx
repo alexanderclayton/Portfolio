@@ -17,27 +17,22 @@ export const About: React.FC = () => {
           />
         </div>
         <div className="p-4 sm:w-[50%] md:w-[60%] lg:w-[70%] xl:w-[90%]">
-          {" "}
-          <h1 className="font-Kalam text-2xl">About Me</h1>{" "}
-          <p>
-            {" "}
-            <span className="pl-8 font-Kalam">Hello World!</span> I'm Alex, a
-            developer based in Kansas, USA. Formerly in hospitality management,
-            I transitioned to coding through a bootcamp at the University of
-            Kansas. Coding allows me to fully engage my passion for building,
-            providing me with the gratification of seeing projects come to
-            fruition.{" "}
-          </p>{" "}
-          <p>
-            {" "}
-            <span className="pl-8">I</span> am enthusiastic about undertaking
-            new projects, mastering emerging technologies, and expanding my
-            network within the web development community.{" "}
-          </p>{" "}
+          <h1 className="font-Kalam text-2xl text-text">About Me</h1>{" "}
+          <p className="text-text">
+            <span className="font-Kalam">Hello World!</span> I'm Alex, a
+            full-stack developer based in Kansas, USA. I'm a bootcamp grad with
+            a background in hospitality management, currently looking for the
+            next stop in my professional career. I love coding because nothing
+            beats the feeling of solving a problem by building something from
+            the ground up. There's always something new to learn, with all the
+            tools we need to change the world at our fingertips. It's been an
+            exciting journey, and I can't wait to see what's in store for me
+            next!
+          </p>
         </div>
       </div>
       <div className="w-full pt-12 flex flex-col sm:flex-row sm:items-center">
-        <h1 className="px-4 text-2xl font-Kalam">Tech Stack:</h1>
+        <h1 className="px-4 text-2xl font-Kalam text-text">Tech Stack:</h1>
         <div className="grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-14 p-4 w-full">
           {techStack.map((tech, idx) => (
             <img key={idx} src={tech.src} alt={tech.alt} className="p-2" />

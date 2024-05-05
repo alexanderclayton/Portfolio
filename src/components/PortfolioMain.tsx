@@ -27,7 +27,7 @@ export const PortfolioMain = () => {
       className="xl:px-12 flex flex-col md:flex-row px-4 items-center py-12 pt-24"
     >
       <div className="md:relative md:w-[10%]">
-        <h1 className="md:absolute md:text-rotate md:text-4xl font-bold font-Kalam text-4xl">
+        <h1 className="md:absolute md:text-rotate md:text-4xl font-bold font-Kalam text-4xl text-text">
           Portfolio
         </h1>
       </div>
@@ -36,7 +36,7 @@ export const PortfolioMain = () => {
           <BiSolidLeftArrow
             size={60}
             onClick={slideLeft}
-            className="p-2 pr-3 bg-light-primary/30 text-dark-secondary hover:text-light-background hover:bg-light-primary hover:cursor-pointer rounded-full"
+            className="p-2 pr-3 bg-light-primary/30 text-dark-secondary hover:text-light-background hover:bg-light-primary hover:cursor-pointer rounded-full text-text"
           />
         </div>
         <div
@@ -56,7 +56,7 @@ export const PortfolioMain = () => {
           <BiSolidRightArrow
             size={60}
             onClick={slideRight}
-            className="p-2 pl-3 bg-light-primary/30 text-dark-secondary hover:text-light-background hover:bg-light-primary hover:cursor-pointer rounded-full"
+            className="text-text p-2 pl-3 bg-light-primary/30 text-dark-secondary hover:text-light-background hover:bg-light-primary hover:cursor-pointer rounded-full"
           />
         </div>
       </div>

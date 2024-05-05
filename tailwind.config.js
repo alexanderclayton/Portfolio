@@ -25,25 +25,11 @@ export default {
     },
     extend: {
       colors: {
-        "primary-blue": "#8fb3ff",
-        "primary-purple": "#690f9a",
-        "secondary-blue": "#002761",
-        "secondary-purple": "#b854ee",
-
-        "light-blue": "#e5eeff",
-
-        "light-text": "#000000",
-        "light-background": "#ffffff",
-        "light-primary": "#8fb3ff",
-        "light-secondary": "#fafcff",
-        "light-accent": "#690f9a",
-        "light-background": "#E1ECF4",
-
-        "dark-text": "#ffffff",
-        "dark-background": "#000000",
-        "dark-primary": "#8fb3ff",
-        "dark-secondary": "#002761",
-        "dark-accent": "#B854EE",
+        text: "var(--text)",
+        background: "var(--background)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
       },
       gridTemplateColumns: {
         14: "repeat(14, minmax(0, 1fr))",

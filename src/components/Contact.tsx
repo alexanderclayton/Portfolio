@@ -43,7 +43,7 @@ export const Contact = () => {
       className="p-12 flex flex-col md:flex-row w-full pt-24"
     >
       <div className="md:w-[50%] w-full">
-        <h1 className="font-Kalam text-3xl">Send Me a Message</h1>
+        <h1 className="font-Kalam text-3xl text-text">Send Me a Message</h1>
         {sent ? (
           <div>Message sent. I'll get back to you ASAP!</div>
         ) : loading ? (
@@ -78,13 +78,13 @@ export const Contact = () => {
                 type="text"
                 placeholder="Name"
                 name="user_name"
-                className="md:w-[45%] border mb-4 md:mb-0 p-2 rounded focus:outline-none focus:ring-2 focus:ring-secondary-purple"
+                className="md:w-[45%] border mb-4 md:mb-0 p-2 rounded focus:outline-none focus:ring-2 focus:ring-accent"
               />
               <input
                 type="text"
                 placeholder="Email"
                 name="user_email"
-                className="md:w-[45%] border p-2 rounded focus:outline-none focus:ring-2 focus:ring-secondary-purple"
+                className="md:w-[45%] border p-2 rounded focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
             <textarea
@@ -92,17 +92,17 @@ export const Contact = () => {
               placeholder="Message"
               cols={30}
               rows={10}
-              className="w-full h-44 border p-2 my-4 rounded focus:outline-none focus:ring-2 focus:ring-secondary-purple"
+              className="w-full h-44 border p-2 my-4 rounded focus:outline-none focus:ring-2 focus:ring-accent"
             ></textarea>
             <input
               type="submit"
               value="Send Message"
-              className="bg-primary-blue text-light-text px-6 py-3 rounded-lg hover:bg-secondary-purple hover:cursor-pointer"
+              className="text-text bg-primary text-light-text px-6 py-3 rounded-lg hover:bg-accent hover:cursor-pointer"
             />
           </form>
         )}
       </div>
-      <div className="md:w-[50%] w-full flex flex-col items-center pl-4 pt-12 md:pt-0">
+      <div className="md:w-[50%] w-full flex flex-col items-center pl-4 pt-12 md:pt-0 text-text">
         <h1 className="font-Kalam text-3xl">Contact Me</h1>
         <div className="w-full flex">
           <div className="w-[30%] flex flex-col justify-around items-end">
