@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useTheme } from "../context/ThemeContext";
+import { GoMoon, GoSun } from "react-icons/go";
 
 export const Header = () => {
   const { darkMode, toggleTheme } = useTheme();
@@ -14,7 +15,7 @@ export const Header = () => {
     <header
       className={
         !nav
-          ? "flex justify-between h-[60px] sm:static font-Quicksand fixed w-full bg-primary-blue sm:bg-transparent"
+          ? "pr-8 flex justify-between h-[60px] sm:static font-Quicksand fixed w-full bg-primary-blue sm:bg-transparent"
           : "bg-primary-blue flex justify-between font-Quicksand fixed w-full"
       }
     >
@@ -24,14 +25,6 @@ export const Header = () => {
       <div className="sm:w-[40%]">
         <div className="hidden sm:flex pt-3">
           <ul className="flex w-full justify-around">
-            <li>
-              <button
-                className="px-4 py-1 border border-text rounded-full text-xl text-text"
-                onClick={toggleTheme}
-              >
-                {!darkMode ? "Dark" : "Light"}
-              </button>
-            </li>
             <li className="px-4 py-1 text-xl text-text hover:bg-accent rounded-full hover:cursor-pointer">
               <a href="/#about">About</a>
             </li>
@@ -40,6 +33,11 @@ export const Header = () => {
             </li>
             <li className="px-4 py-1 text-xl text-text hover:bg-accent rounded-full hover:cursor-pointer">
               <a href="/#contact">Contact</a>
+            </li>
+            <li className="flex justify-center items-center">
+              <button className="text-text" onClick={toggleTheme}>
+                {!darkMode ? <GoMoon size={30} /> : <GoSun size={30} />}
+              </button>
             </li>
           </ul>
         </div>
