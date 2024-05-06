@@ -34,9 +34,15 @@ export const About: React.FC = () => {
       <div className="w-full pt-12 flex flex-col sm:flex-row sm:items-center">
         <h1 className="px-4 text-2xl font-Kalam text-text">Tech Stack:</h1>
         <div className="grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-14 p-4 w-full">
-          {techStack.map((tech, idx) => (
-            <img key={idx} src={tech.src} alt={tech.alt} className="p-2" />
-          ))}
+          {techStack.map((tech, idx) =>
+            tech.type === "svg" ? (
+              <img key={idx} src={tech.src} alt={tech.alt} className="p-2" />
+            ) : (
+              <div className="flex items-center justify-center">
+                <i className={`${tech.src} text-text text-7xl`} />
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>
