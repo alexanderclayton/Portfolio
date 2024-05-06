@@ -17,7 +17,7 @@ export const ProjectCard = ({ image, name, id }: IProjectCardProps) => {
           style={{ backgroundImage: `url(${image})` }}
           className="bg-cover bg-no-repeat bg-center w-[250px] md:w-[300px] h-[200px] rounded-t-2xl"
         />
-        <h2 className="text-2xl whitespace-normal ">{name}</h2>
+        <h2 className="text-2xl whitespace-normal text-text">{name}</h2>
       </div>
     </div>
   );
